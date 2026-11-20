@@ -8,6 +8,7 @@ Run with:
 from fastapi import FastAPI
 
 from app.errors import register_error_handlers
+from app.routers import forms
 
 app = FastAPI(
     title="beav API",
@@ -18,3 +19,6 @@ app = FastAPI(
 
 # Turn on our error handlers, so every error uses the same envelope.
 register_error_handlers(app)
+
+# Routes
+app.include_router(forms.router)
