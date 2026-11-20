@@ -8,7 +8,7 @@ Run with:
 """
 
 from fastapi import FastAPI
-
+from app.routers import forms, greeting
 from app.errors import register_error_handlers
 from app.routers import forms
 
@@ -22,3 +22,4 @@ app = FastAPI(
 register_error_handlers(app)
 
 app.include_router(forms.router)
+app.include_router(greeting.router)    
