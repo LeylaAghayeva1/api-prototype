@@ -1,3 +1,5 @@
+""" NurayAghayeva worked on this file"""
+
 """
 Entry point of the beav API.
 
@@ -8,6 +10,7 @@ Run with:
 from fastapi import FastAPI
 
 from app.errors import register_error_handlers
+from app.routers import forms
 
 app = FastAPI(
     title="beav API",
@@ -16,5 +19,6 @@ app = FastAPI(
                 "Uses mocked in-memory data that resets on every restart.",
 )
 
-# Turn on our error handlers, so every error uses the same envelope.
 register_error_handlers(app)
+
+app.include_router(forms.router)
