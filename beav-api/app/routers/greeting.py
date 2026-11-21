@@ -26,12 +26,12 @@ PROJECT = {
 TEAM = [
     {
         "name": "Nuray Aghayeva",
-        "student_id": "00000",
+        "student_id": "23796",
         "built": "Error handling and response envelope, app setup, forms CRUD routes and ownership rules",
     },
     {
         "name": "Leyla Aghayeva",
-        "student_id": "00000",
+        "student_id": "17752",
         "built": "Mock data, token authentication, validation schemas, duplicate-title check, greeting page, Postman collection",
     },
 ]
