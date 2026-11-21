@@ -1,0 +1,7 @@
+# Use this workspace to collaborate
+workspace:
+  id: db9faaef-fc0a-4fad-8980-9db94c0465ae
+
+localResources:
+  collections:
+    - ../beav-api/postman_collection.json
