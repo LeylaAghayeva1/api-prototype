@@ -10,7 +10,6 @@ Run with:
 from fastapi import FastAPI
 from app.routers import forms, greeting
 from app.errors import register_error_handlers
-from app.routers import forms
 
 app = FastAPI(
     title="beav API",
