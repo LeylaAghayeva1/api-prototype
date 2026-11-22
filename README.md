@@ -143,7 +143,9 @@ The file **[`beav-api/postman_collection.json`](beav-api/postman_collection.json
 5. Validation errors (400)
 6. Other errors: 404, 405, 409
 
-**How to use it:** Postman → **Import** → choose the file. Start the server, then click **Run collection**. Every request has a built-in test that checks the status code, the `success` field and the error code. Tokens are stored as collection variables, and the collection deletes the forms it creates, so it can be run repeatedly without restarting the server.
+**How to use it:** start the server, then open the **Postman desktop app** (the browser version can't reach `127.0.0.1`) → **Import** → choose the file. Make sure the environment dropdown says **No environment**. Open any request and click **Send**, or run everything at once: **⋯** next to the collection → **Run**.
+
+Each request has 2–3 built-in tests that check the status code, the `success` field and the error code, **98 tests in total, all passing**. Tokens and the server URL are stored as collection variables, and the collection deletes the forms it creates, so it can be run repeatedly without restarting the server.
 
 ---
 
@@ -179,7 +181,7 @@ api-prototype/
 
 ▶️ **YouTube:** https://youtu.be/2qDWi3TM7LE?si=pAiETQI6ad1O9n4a
 
-The video shows successful CRUD operations, authorization failures, validation errors, and the HTML greeting page.
+A step-by-step walkthrough you can follow along: installing and starting the API, the HTML greeting page, importing the Postman collection, successful CRUD operations, authentication and authorization failures, validation and other errors, and a full test run.
 
 ---
 
@@ -198,9 +200,8 @@ See [`CONTRIBUTORS.md`](CONTRIBUTORS.md) for details.
 Output of `git shortlog -sn --all`:
 
 ```
-     9	LeylaAghayeva1
-     5	NurayAghayeva
-     2	Nuray
+    16	LeylaAghayeva1
+    13	NurayAghayeva
 ```
 
-> `NurayAghayeva` and `Nuray` are the same person (same email, `aghayevnuray@gmail.com`). Her local Git name was set to "Nuray" for her first commits.
+The repository includes a `.mailmap` file, so commits each member made under a different Git name (for example from the GitHub website) are counted under one name.
