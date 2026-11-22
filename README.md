@@ -200,8 +200,8 @@ See [`CONTRIBUTORS.md`](CONTRIBUTORS.md) for details.
 Output of `git shortlog -sn --all`:
 
 ```
-    16	LeylaAghayeva1
-    13	NurayAghayeva
+    20	LeylaAghayeva1
+    14	NurayAghayeva
 ```
 
 The repository includes a `.mailmap` file, so commits each member made under a different Git name (for example from the GitHub website) are counted under one name.
